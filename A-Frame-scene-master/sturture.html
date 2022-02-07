@@ -13,8 +13,8 @@
 		<img id="sky" src="images/sky.jpeg" crossorigin="anonymous" />
 		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
 		<img id="crate" src="images/build.jpeg" crossorigin="anonymous" />
-		<img id="earth" src="images/earth.png" crossorigin="anonymous" />
 		<img id="hexagons" src="images/man.png" crossorigin="anonymous" />
+		<img id="car" src="images/man.png" crossorigin="anonymous" />
 	</a-assets>
 		
 	<a-sky 
@@ -41,12 +41,18 @@
 		shadow = "cast: true; receive: true">
 	</a-box>
 	
-	<a-sphere
-		radius = "1.25"
-		position = "0 1.25 3"
-		material = "src: #earth;"
+	
+	<a-box
+	      
+		width = "3" height = "1" depth = "1"
+		position = "-1 2 1"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #car"
 		shadow = "cast: true; receive: true">
-	</a-sphere>
+	</a-box>
+	
+	
 	
 	<a-cylinder
 		radius = "0.5" height = "1"

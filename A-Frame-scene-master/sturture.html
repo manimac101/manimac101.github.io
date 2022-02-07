@@ -13,7 +13,7 @@
 		<img id="sky" src="images/sky.jpeg" crossorigin="anonymous" />
 		<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
 		<img id="crate" src="images/build.jpeg" crossorigin="anonymous" />
-		<img id="hexagons" src="images/man.png" crossorigin="anonymous" />
+		<img id="man" src="images/man.png" crossorigin="anonymous" />
 		<img id="car" src="images/car.jpeg" crossorigin="anonymous" />
 	</a-assets>
 		
@@ -33,7 +33,7 @@
 	
 	
 	<a-box
-		width = "1" height = "7" depth = "1"
+		width = "1" height = "6" depth = "1"
 		position = "-1 -0.5 -2"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
@@ -44,7 +44,7 @@
 	
 	<a-box
 	      
-		width = "1.5" height = ".03" depth = "1"
+		width = "1" height = "1" depth = "1"
 		position = "-1 1 -1"
 		rotation = "0 45 0"  
 		color = "#FFFFFF"
@@ -54,13 +54,14 @@
 	
 	
 	
-	<a-cylinder
-		radius = "1" height = "1"
-		position = " 1 0.75 3"
-		color = "#8888BB"
-		material = "src: #hexagons; repeat: 4 2;"
+	<a-box
+		width = "1" height = "3" depth = "1"
+		position = "-1 -0.5 -2"
+		rotation = "0 45 0"  
+		color = "#FFFFFF"
+		material = "src: #man"
 		shadow = "cast: true; receive: true">
-	</a-cylinder>
+	</a-box>
 	
 </a-scene>
 </body>

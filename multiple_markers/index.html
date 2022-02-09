@@ -12,12 +12,12 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
 
-      <a-marker preset="zb">
+      <a-marker id="hiro" type="pattern" url="markers/patt.hiro">
          <a-entity position="0 0 0" gltf-model="models/Pot Plant.glb" rotation="0 90 0" scale="1 1 1">
         </a-entity>
       </a-marker>
         
-      <a-marker preset="kanji">  
+   <a-marker id="kanji" type="pattern" url="markers/patt.kanji">
          <a-entity position="0 0 0" gltf-model="models/Couch.glb" rotation="0 90 0" scale="1 1 1">
         </a-entity>
       </a-marker>  

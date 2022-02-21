@@ -12,9 +12,12 @@
         	<img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
 	</a-assets>
 		
-
+<a-sky 
+       color="#FFFFFF"
+       material = "src: #sky">
     
       <a-box
+	gltf-model="models/Comb.glb"
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
@@ -22,7 +25,9 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #salon"      
       ></a-box>  
+	
      <a-box
+	 gltf-model="models/Carnivore Plant.glb"  
         position="2 2 -2"
         scale=".2 .2 .2" 
         rotation="0 -45 0"
@@ -30,6 +35,8 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #garden"      
       ></a-box>  
+	
+	
      <a-box
         position="0 2 2.5"
         scale=".2 .2 .2" 
@@ -38,7 +45,9 @@
         align="center"
         event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
       ></a-box> 
+	
      <a-box
+	 gltf-model="models/Tree.glb"
         position="2 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"

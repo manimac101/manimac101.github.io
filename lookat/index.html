@@ -9,6 +9,8 @@
        	 	<img id="garden" src="images/garden.jpg" crossorigin="anonymous" />
        		<img id="salon" src="images/salon.jpg" crossorigin="anonymous" />
        	 	<img id="park" src="images/park.jpg" crossorigin="anonymous" />
+		<img id="lot" src="images/park.jpg" crossorigin="anonymous" />
+		
         	
 	</a-assets>
 		
@@ -17,7 +19,7 @@
        material = "src: #sky"></a-sky>
     
       <a-box
-	gltf-model="models/Comb.glb"
+	gltf-model="models/Comb.glb" 
         position="-2 2 -2"
         scale=".2 .2 .2"     
         rotation="0 45 0"
@@ -38,12 +40,13 @@
 	
 	
      <a-box
+	gltf-model="models/Car.glb" 
         position="0 2 2.5"
         scale=".2 .2 .2" 
         rotation="0 180 0"
         value="Six O'Clock"
         align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #lot"     
       ></a-box> 
 	
      <a-box

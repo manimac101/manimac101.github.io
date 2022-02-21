@@ -1,0 +1,55 @@
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+<body>
+  
+    <a-scene antialias="true">
+	
+	<a-assets>
+	
+       	 	<img id="garden" src="images/garden.jpg" crossorigin="anonymous" />
+       		<img id="salon" src="images/salon.jpg" crossorigin="anonymous" />
+       	 	<img id="park" src="images/park.jpg" crossorigin="anonymous" />
+        	<img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
+	</a-assets>
+		
+
+    
+      <a-box
+        position="-2 2 -2"
+        scale=".2 .2 .2"     
+        rotation="0 45 0"
+        value="Nine O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #salon"      
+      ></a-box>  
+     <a-box
+        position="2 2 -2"
+        scale=".2 .2 .2" 
+        rotation="0 -45 0"
+        value="Three O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #garden"      
+      ></a-box>  
+     <a-box
+        position="0 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
+      ></a-box> 
+     <a-box
+        position="2 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #park"     
+      ></a-box> 
+    <a-camera>
+        <a-cursor color=#ff77ff></a-cursor>
+    </a-camera>
+	
+</a-scene>
+    
+</body>
